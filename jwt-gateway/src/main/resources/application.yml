@@ -3,13 +3,13 @@ server:
 zuul:
   routes:
     auth:
-      path: /login/**
+      path: /auth/**
       url: http://127.0.0.1:8081/
     service:
       path: /service/**
       url: http://127.0.0.1:8082/
   jwt:
-    url: /login
+    url: /auth/login
     header: Authorization
     prefix: Bearer
     expiration: 7200000
