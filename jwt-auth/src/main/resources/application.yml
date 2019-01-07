@@ -1,0 +1,9 @@
+server:
+  port: 8081
+auth:
+  jwt:
+    url: /login
+    header: Authorization
+    prefix: Bearer
+    expiration: 7200000
+    secret: othersnotknownit
